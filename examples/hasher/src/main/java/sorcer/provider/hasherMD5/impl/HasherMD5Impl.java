@@ -28,7 +28,7 @@ public class HasherMD5Impl implements HasherMD5 {
 		}
 	}
 	
-	public Context add(Context context) throws RemoteException, ContextException {
+	public Context hash(Context context) throws RemoteException, ContextException {
 		// get inputs and outputs from the service context
 		PositionalContext cxt = (PositionalContext) context;
 		List<String> inputs = cxt.getInValues();

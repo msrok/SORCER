@@ -8,5 +8,5 @@ import java.rmi.RemoteException;
 @SuppressWarnings("rawtypes")
 public interface HasherMD5 {
 
-	public Context add(Context context) throws RemoteException, ContextException;
+	public Context hash(Context context) throws RemoteException, ContextException;
 }

@@ -27,8 +27,8 @@ public class LocalTasks {
 	@Test
 	public void exertTask() throws Exception  {
 
-		Service t5 = service("t5", sig("add", HasherMD5Impl.class),
-				cxt("add", inEnt("arg/x1", "test")));
+		Service t5 = service("t5", sig("hash", HasherMD5Impl.class),
+				cxt("hash", inEnt("arg/x1", "test")));
 
 		Service out = exert(t5);
 		Context cxt = context(out);

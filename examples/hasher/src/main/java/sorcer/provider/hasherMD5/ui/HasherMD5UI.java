@@ -168,7 +168,7 @@ public class HasherMD5UI extends JPanel implements SorcerConstants {
 				outText.setText("Input Data Context\n");
 				outText.append(context.toString());
 				outText.append("\n\nOutput Data Context\n");
-				outText.append(((HasherMD5)provider).add(context).toString());
+				outText.append(((HasherMD5)provider).hash(context).toString());
 			} catch (Exception ex) {
 				logger.throwing(HasherMD5UI.class.getName(),
 						"actionPerformed", ex);

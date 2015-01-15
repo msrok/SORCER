@@ -27,8 +27,8 @@ public class NetTasks {
 	@Test
 	public void exertTask() throws Exception  {
 
-		Task t5 = srv("t5", sig("add", HasherMD5.class),
-				cxt("add", inEnt("arg/x1", "test"), result("result/y")));
+		Task t5 = srv("t5", sig("hash", HasherMD5.class),
+				cxt("hash", inEnt("arg/x1", "test"), result("result/y")));
 
 		Exertion out = exert(t5);
 		Context cxt = context(out);
